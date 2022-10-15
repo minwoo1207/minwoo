@@ -284,6 +284,7 @@ public class CharacterInputController : MonoBehaviour
 				characterCollider.transform.rotation, 1f, m_ObstacleLayer))
 				{
 					m_Combo++;
+					trackManager.speed += 1;
 					m_IsSlidingCombo = true;
 				}
 
@@ -301,6 +302,7 @@ public class CharacterInputController : MonoBehaviour
 				characterCollider.transform.rotation, 0.5f, m_ObstacleLayer))
 				{
 					m_Combo++;
+					trackManager.speed += 1;
 					m_IsJumpingCombo = true;
 				}
 			}
